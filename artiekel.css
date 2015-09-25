@@ -1,0 +1,19 @@
+body > header {
+    background: pink;
+}
+
+main {
+    background: purple;
+}
+
+section.related {
+    background: Blue;
+}
+
+aside {
+    background: green;
+}
+
+body > footer {
+    background: yellow;
+}
