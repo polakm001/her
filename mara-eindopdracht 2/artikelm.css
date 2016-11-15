@@ -1,0 +1,291 @@
+body {
+    width: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 0.875em;
+    margin: 0;
+    padding: 0;
+}
+
+header > img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', 'Open Sans', Arial, sans-serif;
+}
+
+
+/* END MISC */
+
+
+/* HEADER */
+
+body > header {
+    background-color: #cfcfcf;
+}
+
+body > header h1 {
+    color: #4c4c4c;
+    text-align: center;
+}
+
+body > header p:first-of-type {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+body > header img {
+    display: block;
+    margin: 0 auto;
+    max-height: 15.625em;
+}
+
+body > header nav {
+    background-color: #4d4d4d;
+    padding: 1em;
+}
+
+body > header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+nav ul li:hover {
+  background-color: #ffca45;
+  width: 100%;
+  text-align: center;
+}
+a {
+  color: white;
+}
+
+
+body > header > form {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.to-profile {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/* END HEADER */
+
+
+/* MAIN */
+
+body main {
+    display: block;
+    background-color:#ffca45;
+    max-width: 60em;
+    padding: 0.5em;
+
+}
+
+
+main article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffca45;
+}
+
+body main img {
+    width: 100%;
+}
+
+.video-style {
+    width: 100%;
+}
+video {
+    width: 100%;
+}
+
+/* END MAIN */
+
+
+/* RELATED */
+
+.related {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.related > article:first-of-type {
+  width: 100%;
+}
+
+.related > h2:first-of-type {
+  text-align: center;
+  color: white;
+}
+
+.related > article {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.related > article > p {
+  display: block;
+  margin: 0 auto;
+}
+
+/* aside */
+aside {
+    width: 100%;
+}
+
+aside > section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+aside > section > article {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: lightgrey;
+}
+
+aside section article p {
+  padding: 0.5em;
+}
+
+aside section > h2, h3 {
+text-align: center;
+}
+
+h3 {
+  background-color: dimgray;
+  border-radius: 0.5em;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkgrey;
+    padding: 1em;
+}
+
+footer > section {
+    width: 100%;
+}
+#credits {
+  text-align: center;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  width: 90%;
+}
+
+/* media querys */
+
+@media screen and (min-width: 36.563em) {
+  body > header nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li:hover {
+    background-color: #ffca45;
+    width: auto;
+    padding: 0.2em;
+    border-radius: 0.2em;
+  }
+
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .related {
+    flex-direction: row;
+  }
+  .related > article {
+    align-items: center;
+    width: 40%;
+    padding: 0.5em;
+    margin: 1em;
+  }
+
+  section {
+    margin-bottom: 2em;
+  }
+
+  p {
+    max-width: 30em;
+  }
+
+  .flexed-content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  footer > section {
+      width: 25%;
+  }
+}
+
+@media screen and (min-width: 43.750em) {
+  aside > section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  aside > section > article {
+    width: 48%;
+    margin: 1%;
+  }
+  aside > section > article > h3 {
+    text-align: center;
+  }
+  aside > section > article > p {
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  #credits > p {
+    margin: 0 auto;
+  }
+}

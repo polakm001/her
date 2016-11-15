@@ -1,0 +1,304 @@
+body {
+    width: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size:  0.875em;
+    margin: 0;
+    padding: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+header > img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', 'Open Sans', Arial, sans-serif;
+}
+
+
+/* END MISC */
+/* HEADER */
+
+body > header {
+    background-color: #cfcfcf;
+}
+
+body > header h1 {
+    color: #4c4c4c;
+    text-align: center;
+}
+
+body > header p:first-of-type {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+body > header img {
+    display: block;
+    margin: 0 auto;
+    max-height: 15.625em;
+}
+
+body > header nav {
+    background-color: #4d4d4d;
+    padding: 1em;
+}
+
+body > header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body > header nav ul li {
+  padding: 0.5em;
+}
+
+nav ul li:hover {
+  background-color: #ffca45;
+  width: auto;
+  text-align: center;
+}
+a {
+  color: black;
+}
+
+body > header > form {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.to-profile {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5em;
+}
+/*main*/
+
+body>main{
+    padding: 0 0.5em;
+}
+
+fieldset {
+border-style: solid;
+border-color: white;
+    border-radius: 3em;
+    margin: 1em 0;
+}
+
+form>fieldset {
+    background-color: #ffcc00;
+    border-style: none;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+legend {
+    font-size: 1.35em;
+    font-weight: 400;
+    line-height: 1.25em;
+    position: relative;
+    top: 1.5em;
+    text-decoration: none;
+    margin: 0 auto 2em auto;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+    display: block;
+}
+
+form>fieldset:first-of-type label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form>fieldset:first-of-type label>em {
+    color: firebrick;
+    font-weight: 600;
+    order: -1;
+    text-align: right;
+}
+
+form>fieldset:first-of-type label>em:after {
+    content: "-";
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+    height: 3em;
+    border-radius: 1em;
+    border-style: none;
+    margin: 1em 0;
+    font-size: 0.8em;
+}
+
+textarea {
+    width: 100%;
+    height: 3em;
+    font-size: 0.8em;
+    border-radius: 1em;
+    border-style: none;
+    margin: 1em 0;
+}
+
+form>fieldset:nth-of-type(2) label {
+    display: inline;
+    background-color: whitesmoke;
+    float: left;
+    width: 45%;
+    height: 3em;
+    margin: 0 0 0 2.5%;
+    padding: 0.5em;
+    border-radius: 0.8em;
+}
+
+form>fieldset:nth-of-type(2) span {
+    font-size: 0.8em;
+}
+
+form>fieldset:nth-of-type(3) fieldset label {
+    display: block;
+    margin: 1em 10%;
+}
+
+form>fieldset:nth-of-type(4)>fieldset:first-of-type label {
+    display: block;
+    margin: 1em 10%;
+}
+
+form>fieldset:nth-of-type(4)>fieldset:nth-of-type(2) label {
+    display: block;
+    margin: 1em 10%;
+}
+
+form>fieldset:nth-of-type(4)>fieldset:nth-of-type(3) {
+    border-style: none;
+}
+
+
+
+/*related*/
+
+body>section{
+
+    padding: 0 0.5em;
+}
+
+body>section article {
+    background-color: whitesmoke;
+    margin: 1em 0;
+    border-radius: 0 0 1em 0;
+}
+
+body>section article p {
+    color: black;
+}
+
+body>section article h3 {
+    text-align: left;
+    background-color: #ffcc00;
+    padding: 0.75em 0.5em;
+}
+
+
+/*aside*/
+
+body>aside{
+    padding: 0 0.5em;
+}
+
+body>aside article {
+    background-color: whitesmoke;
+    margin: 1em 0;
+    border-radius: 0 0 1em 0;
+}
+
+body>aside article p {
+    color: black;
+}
+
+body>aside article h3 {
+    text-align: right;
+    background-color: dimgray;
+    padding: 0.75em 0.5em;
+    color: #ffcc00;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkgrey;
+    padding: 1em;
+}
+
+footer > section {
+    width: 100%;
+}
+
+#credits {
+  text-align: center;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  width: 90%;
+}
+
+@media screen and (min-width: 31.250em) {
+  main {
+    max-width: 35em;
+    margin: 0 auto;
+  }
+  .related {
+    max-width: 35em;
+    margin: 0 auto;
+  }
+  aside {
+    max-width: 35em;
+    margin: 0 auto;
+  }
+  footer {
+    flex-direction: row;
+  }
+  footer>section {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 50.000em) {
+  footer>section {
+    width: 33%;
+  }
+  body > header nav ul {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 75.000em) {
+  footer>section {
+    width: 25%;
+  }
+  #search {
+    max-width: 14em;
+    padding-right: 5em;
+  }
+}
